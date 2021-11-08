@@ -98,3 +98,4 @@
   console.groupEnd("All colors used in elements on the page");
 
 })();
+

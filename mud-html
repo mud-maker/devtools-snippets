@@ -1,0 +1,77 @@
+// 2022-11-28 insInput
+init()
+
+HTMLElement.prototype.insertAfter=function(newNode) {var sibl=this; sibl.parentNode.insertBefore(newNode,sibl.nextSibling) }
+
+function newInp(type, text=type.toUpperCase() ) {
+l=document.createElement('label')
+i=document.createElement('input')
+
+//i.type="color"
+//i.value="#447799"
+i.type=type
+i.name="radios"
+$0.insertAfter(l)
+
+l.insertAdjacentElement('beforeend', i);
+l.insertAdjacentText('beforeend', text)
+// l.ins...El|txt bef i|tx
+return i;
+} // newInp
+
+r1=newInp(radio, "Radio 1")
+r2=newInp(radio, "Radio 2")
+q,r3=newInp(radio, "Radio 3")
+r2.name="radios"
+'radios'
+q.parentNode.style.background=yellow
+
+function init () {
+$mud={
+cc:console.log
+} // $mud
+
+cc=$mud.cc
+    
+ss=`
+color: white black gray red green blue yellow orange tan plum #28a
+itype: text radio checkbox color date time
+tag: div span hr input textarea option ol ul 
+`;
+
+for (s of ss.split('\n').filter(s=>s.length)){
+[colection,vals]=s.split(':')
+vals=vals.trim().split(' ')
+
+$mud[colection]= vals
+vals.map (k=>window[k]=k)
+} // for
+
+//for (i of s.matchAll('(?<a>\w*):(?<b>\w*)')) cc (i)
+    
+} // init
+    
+
+
+/*mmmmmmmmmmmmmmmm
+fs1 ? yield
+fs > form
+
+
+newInput:
+p.id1.radio.name1.Class1`text`= value
+n1`text1`=1111
+
+p.radio.name1`text1`.checked=val1
+p.color.color1='#22aaee'
+
+    mmmmmmmmm*/
+
+
+p=new Proxy(t={}, h={});
+h.get= function(t,k,r) {cc('get:', k) 
+
+$mud.itype.includes (k)                    
+                     
+}; // get
+
